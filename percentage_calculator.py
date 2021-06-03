@@ -8,7 +8,7 @@ try:
   how_many_subjects = int(input('Please enter the number of subjects : '))
   print('')
 except:
-  print('Please enter a whole value number, for the number of subjects!')
+  print('Error : Please enter a whole value number, for the number of subjects!')
   exit()
 
  # The below two counter varibales are for totalling the number of obtained marks
@@ -40,8 +40,9 @@ while how_many_subjects != 0:
 
     if total_marks < obtained_marks:
       print('Error : Obtained marks cannot be greater than Total marks!')
+      exit()
 
-    total_total_marks = total_total_marks+ total_marks
+    total_total_marks = total_total_marks + total_marks
     print('')
 
   except:
@@ -53,4 +54,4 @@ while how_many_subjects != 0:
 
 
 # Final answer :-
-print('Your percentage is : ', (total_obtained_marks/total_total_marks)*100, "%")
+print('Your total percentage is : ', (total_obtained_marks/total_total_marks)*100, "%")
