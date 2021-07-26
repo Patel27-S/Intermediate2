@@ -1,3 +1,1 @@
-# Intermediate2
-
-This repository containes all the practice projects that I have started doing in Python. 
+This repository contains some of the practice work of mine in Python. 
